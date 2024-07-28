@@ -1,10 +1,10 @@
 # Responsive Portfoili Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Demo: [PortfolioLink](https://saranchotsuwanporfolio.netlify.app/)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This portfolio website represents my experiences, skills, and personal projects.
 
 ### `npm start`
 
