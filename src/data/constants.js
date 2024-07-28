@@ -207,7 +207,7 @@ export const Bio = {
         portfolio,
       tags: ["React Js", "HTML5", "CSS3", "JavaScript", "Git", "GitHub", "Netlify"],
       category: "web app",
-      github: "",
+      github: "https://github.com/schotsuw/portfolio",
       webapp: "",
     },
     {
