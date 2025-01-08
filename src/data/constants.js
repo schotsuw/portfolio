@@ -9,6 +9,7 @@ import inprogress from '../images/Work-In-Progress.png'
 import c_icon from '../images/c-program.png'
 import restapi from '../images/rest-api-blue-logo-22098.png'
 import aws from '../images/awslogo.png'
+import projectmanagement from '../images/pm.png'
 export const Bio = {
     name: "Saran Chotsuwan",
     roles: [
@@ -245,5 +246,26 @@ export const Bio = {
       category: "android app",
       github: "",
       webapp: "",
+    },
+    {
+      id: 3,
+      title: "Project Management App",
+      date: "December 2024",
+      description:
+        "A project management app that allows users to create, update, and delete projects and tasks. Users can also move tasks by `dragging and dropping` between different columns. This project mainly focuses on learning web development and AWS services/architecture.",
+      image:
+        projectmanagement,
+      tags: [
+        "Next Js",
+        "Node Js",
+        "Prisma",
+        "PostgreSQL (ORM)",
+        "AWS",
+        "Git",
+        "GitHub"
+      ],
+      category: "web app",
+      github: "https://github.com/schotsuw/project-management-app",
+      webapp: "https://main.d2tcuj4tznahyn.amplifyapp.com/",
     },
   ];
