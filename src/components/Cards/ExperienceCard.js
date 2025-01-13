@@ -18,6 +18,7 @@ const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
+    margin-left: 10px;
     color: ${({ theme }) => theme.text_primary + 99};
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
@@ -150,42 +151,50 @@ const Skill = styled.div`
 
 
 const ExperienceCard = ({ experience }) => {
-  return (
-    <Card>
-        <Top>
-            <Logo src={experience.img}></Logo>
-            <Body>
-                <Role>{experience.role}</Role>
-                <Company>{experience.company}</Company>
-                <Duration>{experience.date}</Duration>
-            </Body>
-        </Top>
-        <Description>
-        {experience?.desc &&
-            <Span>{experience?.desc}</Span>
-        }
+    return (
+      <Card>
+          <Top>
+              <Logo src={experience.img}></Logo>
+              <Body>
+                  <Role>{experience.role}</Role>
+                  <Company>{experience.company}</Company>
+                  <Duration>{experience.date}</Duration>
+              </Body>
+          </Top>
+          <Description>
+          {Array.isArray(experience.desc) ? (
+              <ul>
+                  {experience.desc.map((item, index) => (
+                      <li key={index}>{item}</li>
+                  ))}
+              </ul>
+          ) : (
+              <p>{experience.desc}</p>
+          )}
+  
+          {experience?.skills && (
+              <>
+                  <br />
+                  <Skills>
+                      <b>Skills:</b>
+                      <ItemWrapper>
+                          {experience.skills.map((skill, index) => (
+                              <Skill key={index}>• {skill}</Skill>
+                          ))}
+                      </ItemWrapper>
+                  </Skills>
+              </>
+          )}
+          </Description>
+          {experience.doc && (
+              <a href={experience.doc} target="new">
+                  <Document src={experience.doc} />
+              </a>
+          )}
+      </Card>
+    );
+  };
+  
 
-        {experience?.skills &&
-                <>
-                    <br/>
-                        <Skills>
-                            <b>Skills:</b>
-                            <ItemWrapper>
-                                {experience?.skills?.map((skill) => (
-                                    <Skill>• {skill}</Skill>
-                                ))}
-                            </ItemWrapper>
-                        </Skills>
-                </>
-        }
-        </Description>
-        {experience.doc &&
-            <a href={experience.doc} target='new'>
-                <Document src={experience.doc}/>
-            </a>
-        }
-    </Card>
-  )
-}
 
 export default ExperienceCard

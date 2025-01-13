@@ -1,22 +1,23 @@
 import Git from '../images/Git-Icon-1788C.png'
-import Figma from '../images/7564187_figma_logo_brand_icon.png'
 import unb from '../images/unb-logo.png'
 import techsoft from '../images/tech-soft-holding-768x432.jpg'
 import skincare from '../images/skincare-e-com.png'
 import shooting from '../images/shooting-celebrities.png'
 import portfolio from '../images/portfolio.png'
-import inprogress from '../images/Work-In-Progress.png'
 import c_icon from '../images/c-program.png'
 import restapi from '../images/rest-api-blue-logo-22098.png'
 import aws from '../images/awslogo.png'
 import projectmanagement from '../images/pm.png'
+import sonrai from '../images/sonrai.jpg'
+import graphql from '../images/grapql.png'
+import postgresql from '../images/postgresql.png'
 export const Bio = {
     name: "Saran Chotsuwan",
     roles: [
       "Software Engineering student"
     ],
     description:
-      "I am passionate about solving problems and powerlifting. As a highly self-motivated student with a positive attitude and a growth mindset, I love exploring new technologies. I am excited to contribute to projects that can support our society!",
+      "Solving problems and powerlifting are my daily routine. A highly self-motivated student with a positive attitude and a growth mindset.",
     github: "https://github.com/schotsuw",
     resume:
       "https://drive.google.com/file/d/1uCV0Mk_6me_JHK9vYpll0wR83_pXw-Cv/view?usp=sharing",
@@ -90,7 +91,16 @@ export const Bio = {
           image:
             c_icon,
         },
-        
+        {
+          name: "GraphQL",
+          image:
+            graphql,
+        },
+        {
+          name: "PostgreSQL",
+          image:
+            postgresql,
+        },
       ],
     },
     
@@ -113,19 +123,9 @@ export const Bio = {
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
         },
         {
-          name: "Netlify",
-          image:
-            "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-        },
-        {
           name: "VS Code",
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
-        },
-        {
-          name: "Figma",
-          image:
-            Figma,
         },
         {
           name: "API",
@@ -143,12 +143,41 @@ export const Bio = {
   
   export const experiences = [
     {
-      id: 0,
+      id: 2,
+      img: sonrai,
+      role: "Software Development Engineer in Test (SDET)",
+      company: "Sonrai Security Inc.",
+      date: "September 2024 - December 2024",
+      desc: [
+        "Conducted regression tests for over 100 test cases using 20+ AWS services to ensure software quality pre-production.",
+        "Automated testing processes by modifying Python scripts, increasing efficiency by 40%.",
+        "Collaborated with cross-functional teams to ensure successful testing and deployment of software updates.",
+      ],
+      skills: [
+        "Python",
+        "AWS",
+        "GraphQL",
+        "Regression Testing",
+        "Automation Testing",
+        "Jira",
+        "JavaScript",
+        "PostgreSQL",
+        "Git",
+        "Agile methodology",
+      ],
+      doc: "",
+    },
+    {
+      id: 1,
       img: unb,
       role: "Teaching Assistant",
       company: "University of New Brunswick",
       date: "Jan 2024 - April 2024",
-      desc: "Assisted in-person lab sessions, covering basic (i.e. functions) to advanced programming languages (i.e. Rapid API, Object-oriented programming) in Python, JavaScript, Racket, and Octave. Assessed and graded assignments, delivering constructive feedback to enhance students' programming proficiency. Demonstrated effective communication skills in explaining complex programming concepts to students.",
+      desc: [
+        "Assisted in-person lab sessions, covering basic (i.e. functions) to advanced programming languages (i.e. Rapid API, Object-oriented programming) in Python, JavaScript, Racket, and Octave.",
+        "Assessed and graded assignments, delivering constructive feedback to enhance students' programming proficiency.",
+        "Demonstrated effective communication skills in explaining complex programming concepts to students."
+      ],
       skills: [
         "JavaScript",
         "Node Js",
@@ -229,27 +258,10 @@ export const Bio = {
       github: "https://github.com/schotsuw/Space_invader_celebrities",
       webapp: "https://youtu.be/YL5uHrocNZA",
     },
-    {
-      id: 2,
-      title: "Healthcare App",
-      date: "July 2024 - Present",
-      description:
-        "In the process of learning and developing an android application providing multiple features including: Login, Registration, Lab Test, Medicine List, Find doctor, Health Articles, Order Details, and Logout",
-      image:
-        inprogress,
-      tags: [
-        "Java",
-        "Android Studio",
-        "Git",
-        "GitHub"
-      ],
-      category: "android app",
-      github: "",
-      webapp: "",
-    },
+    
     {
       id: 3,
-      title: "Project Management App",
+      title: "Project Management",
       date: "December 2024",
       description:
         "A project management app that allows users to create, update, and delete projects and tasks. Users can also move tasks by `dragging and dropping` between different columns. This project mainly focuses on learning web development and AWS services/architecture.",
@@ -265,6 +277,20 @@ export const Bio = {
         "GitHub"
       ],
       category: "web app",
+      github: "https://github.com/schotsuw/project-management-app",
+      webapp: "https://main.d2tcuj4tznahyn.amplifyapp.com/",
+    },
+
+    {
+      id: 3,
+      title: "AI Finance Tracker",
+      date: "December 2024",
+      description:
+        "",
+      image:
+       [],
+      tags: [],
+      category: "ai saas",
       github: "https://github.com/schotsuw/project-management-app",
       webapp: "https://main.d2tcuj4tznahyn.amplifyapp.com/",
     },

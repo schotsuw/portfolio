@@ -132,8 +132,8 @@ const Project = ({openModal, setOpenModal}) => {
                 }
                 <Divider/>
                 
-                {toggle === 'android app' ? 
-                  <ToggleButton active value='android app' onClick={() => setToggle('android app')}>ANDRIOD APP'S</ToggleButton> : <ToggleButton value='android app' onClick={() => setToggle('android app')}>ANDRIOD APP'S</ToggleButton>
+                {toggle === 'ai saas' ? 
+                  <ToggleButton active value='ai saas' onClick={() => setToggle('ai saas')}>AI SAAS</ToggleButton> : <ToggleButton value='ai saas' onClick={() => setToggle('ai saas')}>AI SAAS</ToggleButton>
                 }
             </ToggleButtonGroup>
             <CardContainer>
