@@ -283,7 +283,7 @@ export const Bio = {
 
     {
       id: 3,
-      title: "AI Finance Tracker",
+      title: "GitSensei",
       date: "December 2024",
       description:
         "",
@@ -291,7 +291,7 @@ export const Bio = {
        [],
       tags: [],
       category: "ai saas",
-      github: "https://github.com/schotsuw/project-management-app",
-      webapp: "https://main.d2tcuj4tznahyn.amplifyapp.com/",
+      github: "",
+      webapp: "",
     },
   ];
