@@ -207,6 +207,29 @@ export const Bio = {
   
   export const projects = [
     {
+      id: 3,
+      title: "Project Management",
+      date: "December 2024",
+      description:
+        "A project management app that allows users to create, update, and delete projects and tasks. Users can also move tasks by `dragging and dropping` between different columns. This project mainly focuses on learning web development and AWS services/architecture.",
+      image:
+        projectmanagement,
+      tags: [
+        "Next Js",
+        "Node Js",
+        "Prisma",
+        "PostgreSQL (ORM)",
+        "AWS",
+        "Git",
+        "GitHub"
+      ],
+      category: "web app",
+      github: "https://github.com/schotsuw/project-management-app",
+      webapp: "https://main.d2tcuj4tznahyn.amplifyapp.com/",
+    },
+
+    
+    {
       id: 9,
       title: "Korean Skincare E-Com",
       date: "June 2024 - July 2024",
@@ -259,39 +282,5 @@ export const Bio = {
       webapp: "https://youtu.be/YL5uHrocNZA",
     },
     
-    {
-      id: 3,
-      title: "Project Management",
-      date: "December 2024",
-      description:
-        "A project management app that allows users to create, update, and delete projects and tasks. Users can also move tasks by `dragging and dropping` between different columns. This project mainly focuses on learning web development and AWS services/architecture.",
-      image:
-        projectmanagement,
-      tags: [
-        "Next Js",
-        "Node Js",
-        "Prisma",
-        "PostgreSQL (ORM)",
-        "AWS",
-        "Git",
-        "GitHub"
-      ],
-      category: "web app",
-      github: "https://github.com/schotsuw/project-management-app",
-      webapp: "https://main.d2tcuj4tznahyn.amplifyapp.com/",
-    },
-
-    {
-      id: 3,
-      title: "GitSensei",
-      date: "December 2024",
-      description:
-        "",
-      image:
-       [],
-      tags: [],
-      category: "ai saas",
-      github: "",
-      webapp: "",
-    },
+    
   ];
