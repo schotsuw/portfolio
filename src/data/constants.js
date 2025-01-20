@@ -20,7 +20,7 @@ export const Bio = {
       "Solving problems and powerlifting are my daily routine. A highly self-motivated student with a positive attitude and a growth mindset.",
     github: "https://github.com/schotsuw",
     resume:
-      "https://drive.google.com/file/d/1uCV0Mk_6me_JHK9vYpll0wR83_pXw-Cv/view?usp=sharing",
+      "https://drive.google.com/file/d/13XwN6UPJC_nYYpLyJ7oalVLa1sExTgFy/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/saran-chotsuwan-5b38682b5/",
   };
   
