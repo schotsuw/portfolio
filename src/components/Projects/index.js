@@ -131,8 +131,11 @@ const Project = ({openModal, setOpenModal}) => {
                   <ToggleButton value='game' onClick={() => setToggle('game')}>GAME</ToggleButton>
                 }
                 <Divider/>
-                
-                
+                {toggle === 'ai-saas' ? 
+                  <ToggleButton active value='ai-saas' onClick={() => setToggle('ai-saas')}>AI SAAS</ToggleButton> 
+                  : 
+                  <ToggleButton value='ai-saas' onClick={() => setToggle('ai-saas')}>AI SAAS</ToggleButton>
+                }
             </ToggleButtonGroup>
             <CardContainer>
                 {toggle === 'all' && projects.map((project) => (<ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>))}

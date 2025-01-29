@@ -11,13 +11,14 @@ import projectmanagement from '../images/pm.png'
 import sonrai from '../images/sonrai.jpg'
 import graphql from '../images/grapql.png'
 import postgresql from '../images/postgresql.png'
+import comingsoon from '../images/comingsoon.jpg'
 export const Bio = {
     name: "Saran Chotsuwan",
     roles: [
       "Software Engineering student"
     ],
     description:
-      "Solving problems and powerlifting are my daily routine. A highly self-motivated student with a positive attitude and a growth mindset.",
+      "Solving problems and powerlifting are my daily routine. A highly self-motivated Thai student with a positive attitude and a growth mindset.",
     github: "https://github.com/schotsuw",
     resume:
       "https://drive.google.com/file/d/13XwN6UPJC_nYYpLyJ7oalVLa1sExTgFy/view?usp=sharing",
@@ -145,6 +146,7 @@ export const Bio = {
     {
       id: 2,
       img: sonrai,
+      companyUrl: "https://sonraisecurity.com/",
       role: "Software Development Engineer in Test (SDET)",
       company: "Sonrai Security Inc.",
       date: "September 2024 - December 2024",
@@ -171,6 +173,7 @@ export const Bio = {
       id: 1,
       img: unb,
       role: "Teaching Assistant",
+      companyUrl: "https://www.unb.ca/",
       company: "University of New Brunswick",
       date: "Jan 2024 - April 2024",
       desc: [
@@ -192,6 +195,7 @@ export const Bio = {
       id: 0,
       img: techsoft,
       role: "Part-time Assistant",
+      companyUrl: "https://www.linkedin.com/company/techsoftholding-th/?originalSubdomain=th",
       company: "Tech Soft Holding Co. Ltd",
       date: "May 2023 - August 2023",
       desc: "Assisted Dev team for research about Fintech Hirer Purchase Software.",
@@ -206,6 +210,27 @@ export const Bio = {
   ];
   
   export const projects = [
+    {
+      id: 4,
+      title: "Git Sensei",
+      date: "Present",
+      description:
+        "Messy Github repositories? Long project meeting record? This built-in AI Github assistant helps developers to answer ANYTHING about their repositories by using your Github repo link and Github token. Also, One meeting upload, you will get the summary of it too!. ",
+      image:
+        comingsoon,
+      tags: [
+        "Next Js",
+        "Node Js",
+        "Prisma",
+        "PostgreSQL",
+        "Gemini AI",
+        "Assembly AI",
+        "RAG",
+        "Git",
+        "GitHub"
+      ],
+      category: "ai-saas",
+    },
     {
       id: 3,
       title: "Project Management",

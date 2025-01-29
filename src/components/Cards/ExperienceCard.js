@@ -148,6 +148,13 @@ const Skill = styled.div`
     }
 `;
 
+const Link = styled.a`
+    text-decoration: none;
+    color: ${({ theme }) => theme.primary};
+    &:hover{
+        text-decoration: underline;
+    }
+`;
 
 
 const ExperienceCard = ({ experience }) => {
@@ -157,7 +164,9 @@ const ExperienceCard = ({ experience }) => {
               <Logo src={experience.img}></Logo>
               <Body>
                   <Role>{experience.role}</Role>
-                  <Company>{experience.company}</Company>
+                  <Company><Link href={experience.companyUrl} target="_blank" rel="noopener noreferrer">
+                    {experience.company}
+                    </Link></Company>
                   <Duration>{experience.date}</Duration>
               </Body>
           </Top>
