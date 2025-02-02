@@ -1,6 +1,6 @@
 # Responsive Portfolio Website
 ![image](https://github.com/user-attachments/assets/d31c2505-48f9-454b-be6d-ef09273ce4cb)
-(unfortunately, this domain is currently on suspension due to my technical issues. I am trying to get my domain back as soon as I can)
+
 Demo: [PortfolioLink](https://saranchotsuwan.com/)
 
 ## Description
