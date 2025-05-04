@@ -159,6 +159,7 @@ const MobileLink = styled.a`
 const GithubButton = styled(motion.a)`
   display: flex;
   align-items: center;
+  justifyContent: "center",
   gap: 10px;
   padding: 0 20px;
   height: 44px;
@@ -196,6 +197,10 @@ const GithubButton = styled(motion.a)`
     &:before {
       left: 100%;
     }
+  }
+
+  svg {
+    margin-right: 4px; // Add a small right margin to the icon
   }
 `;
 
@@ -440,7 +445,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               ))}
 
               <GithubButton
-                style={{ marginTop: 16, width: "100%" }}
+                style={{ marginTop: 16, width: "100%", justifyContent: "center" }}
                 href={Bio.github}
                 target="_blank"
                 whileHover={{ scale: 1.02 }}
