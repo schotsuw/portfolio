@@ -115,4 +115,4 @@ Feel free to reach out via the contact form on the website or connect with me on
 
 ---
 
-> © 2024 Saran Chotsuwan. All rights reserved.
+> © 2025 Saran Chotsuwan. Built with ❤️. All rights reserved.
