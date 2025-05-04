@@ -29,7 +29,7 @@ const ToggleBall = styled(motion.div)`
 
 const Icon = styled.div`
   color: ${({ theme }) => theme.text_primary};
-  font-size: 12px;
+  font-size: 13px;
   z-index: 1;
 `;
 

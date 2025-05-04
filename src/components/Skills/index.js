@@ -176,7 +176,7 @@ const SkillImage = styled.img`
 const SkillCategory = styled.div`
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 10px;
   font-size: 12px;
   font-weight: 500;
   color: ${({ theme }) => theme.primary};
