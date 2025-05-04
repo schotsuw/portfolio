@@ -1,6 +1,9 @@
 # Saran Chotsuwan – Responsive Portfolio Website
 
-![Portfolio Screenshot](https://github.com/user-attachments/assets/d31c2505-48f9-454b-be6d-ef09273ce4cb)
+
+<img width="1512" alt="Screenshot 2568-05-04 at 00 24 48" src="https://github.com/user-attachments/assets/811481e5-0b3e-4d38-a22f-4a4bcc69248f" />
+<img width="1512" alt="Screenshot 2568-05-04 at 00 24 03" src="https://github.com/user-attachments/assets/87cc8c05-e576-4503-a49c-cfe901c90ffc" />
+
 
 **Live Demo:** [saranchotsuwan.com](https://saranchotsuwan.com/)
 
