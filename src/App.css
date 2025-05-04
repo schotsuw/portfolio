@@ -8,8 +8,10 @@
     
 }
 
-html{
-  scroll-behavior: smooth;
+html, body, #root {
+  min-height: 100vh;
+  background: #181824;
+  overflow-x: hidden;
 }
 
 body{
@@ -39,3 +41,13 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #626970;
   }
+  /* === smooth scrolling for the whole document === */
+html {
+  scroll-behavior: smooth;
+}
+
+/* === tell every in‑page target to stop 80 px early
+      (equal to your fixed navbar’s height) === */
+[id] {
+  scroll-margin-top: 80px;
+}

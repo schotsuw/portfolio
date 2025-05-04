@@ -12,10 +12,13 @@ import sonrai from '../images/sonrai.jpg'
 import graphql from '../images/grapql.png'
 import postgresql from '../images/postgresql.png'
 import comingsoon from '../images/comingsoon.jpg'
+import introhive from '../images/introhive.jpeg'
 export const Bio = {
     name: "Saran Chotsuwan",
     roles: [
-      "Software Engineering student"
+      "SWE student",
+      "Powerlifter",
+      "Cat Lover"
     ],
     description:
       "Solving problems and powerlifting are my daily routine. A highly self-motivated Thai student with a positive attitude and a growth mindset.",
@@ -143,6 +146,21 @@ export const Bio = {
   ];
   
   export const experiences = [
+    {
+      id: 3,
+      img: introhive,
+      companyUrl: "https://www.introhive.com/",
+      role: "Associate Software Engineer - Intelligence",
+      company: "IntroHive Services Inc.",
+      date: "May 2025 - Present",
+      desc: [
+        ""
+      ],
+      skills: [
+        ""
+      ],
+      doc: "",
+    },
     {
       id: 2,
       img: sonrai,
