@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa"
 import { Bio } from "../../data/constants"
 import ToggleTheme from "../ToggleTheme"
 import { motion, AnimatePresence } from "framer-motion"
+import sLogo from "../../images/s-logo.png"
 
 const Nav = styled(motion.nav)`
   background-color: ${({ theme }) => theme.card_light};
@@ -111,15 +112,25 @@ const ButtonContainer = styled.div`
   }
 `
 
-const LogoText = styled(motion.div)`
-  font-weight: 800;
-  font-size: 22px;
-  margin-left: 6px;
-  margin-right: 6px;
-  background: linear-gradient(90deg, #007AFF 0%, #5856D6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+const LogoImage = styled(motion.img)`
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 6px;
+  @media (max-width: 768px) {
+    height: 40px;
+  }
 `
+
+// const LogoText = styled(motion.div)`
+//   font-weight: 800;
+//   font-size: 22px;
+//   margin-left: 6px;
+//   margin-right: 6px;
+//   background: linear-gradient(90deg, #007AFF 0%, #5856D6 100%);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// `
 
 const MobileMenu = styled(motion.div)`
   display: flex;
@@ -223,17 +234,18 @@ const MobileIcon = styled.div`
   }
 `
 
-const LogoIcon = styled.div`
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-background-clip: text;
-`
+// const LogoIcon = styled.div`
+//   font-size: 24px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   -webkit-background-clip: text;
+// `
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [localDarkMode, setLocalDarkMode] = useState(darkMode ?? true)
+  // eslint-disable-next-line
   const theme = useTheme()
 
   useEffect(() => {
@@ -284,15 +296,15 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               textDecoration: "none",
             }}
           >
-            <LogoIcon>🐱</LogoIcon>
-            <LogoText
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
+
+            <LogoImage 
+              src={sLogo} 
+              alt="Saran Chotsuwan" 
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              Portfolio
-            </LogoText>
-            <LogoIcon>🐱</LogoIcon>
+            />
+
           </a>
         </NavLogo>
         <MobileIcon>
