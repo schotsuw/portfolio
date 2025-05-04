@@ -12,7 +12,7 @@ import sonrai from '../images/sonrai.jpg'
 import graphql from '../images/grapql.png'
 import postgresql from '../images/postgresql.png'
 import comingsoon from '../images/comingsoon.jpg'
-import introhive from '../images/introhive.png'
+import introhive from '../images/introhive.'
 export const Bio = {
     name: "Saran Chotsuwan",
     roles: [
